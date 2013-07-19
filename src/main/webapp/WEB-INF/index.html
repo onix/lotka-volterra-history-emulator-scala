@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lotka-Volterra History Model Emulator</title>
+
+    <link media="screen" rel="stylesheet" href="css/style.css" type="text/css">
+    <link media="print" rel="stylesheet" href="css/print.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div id="input">
+        <form>
+            <p>Predators initial density (<i>y</i>): <input type="text" value="15" name="predatorsInitialDensity"></p>
+            <p>Prey initial density (<i>x</i>): <input type="text" value="7" name="preyInitialDensity"></p>
+            <p>Intrinsic rate of prey population increase (&#x03b1): <input type="text" value="1.0" name="preyPopulationIncreaseRate"></p>
+            <p>Predation rate coefficient (&#x03b2): <input type="text" value="0.1" name="predationRateCoefficient"></p>
+            <p>Predator mortality rate (&#x03b3): <input type="text" value="1.0" name="predatorsMortalityRate"></p>
+            <p>Reproduction rate of predators per 1 prey eaten (&#x03b4): <input type="text" value="0.075" name="predatorsReproductionRate"></p>
+            <p>From T1: <input type="text" value="0" name="timeIntervalBegin" ></p>
+            <p>To T2: <input type="text" value="20" name="timeIntervalEnd"></p>
+            <p>dt (discretization rate): <input type="text" value="0.01" name="dt"></p>
+        </form>
+        <a href="#" class="button" onclick="replotGraph()">Replot</a>
+        <p class = "hint">*Hint: to get a printable report press a "Print" button in your web-browser.</p>
+    </div>
+
+    <div id="graphics"></div>
+</div>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/highcharts-3.0.1.min.js" type="text/javascript"></script>
+<script src="js/chart-configuration.js" type="text/javascript"></script>
+<script src="js/frontend.js" type="text/javascript"></script>
+</body>
+</html>

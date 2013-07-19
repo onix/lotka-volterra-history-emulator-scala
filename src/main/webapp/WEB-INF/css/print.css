@@ -1,0 +1,28 @@
+/*Reset Style*/
+body {
+    margin:0;
+    padding:0;
+    line-height: 1.4em;
+    word-spacing:1px;
+    letter-spacing:0.2px;
+    font: normal 16pt Arial,Helvetica,sans-serif;
+    color: #000;
+}
+
+/*Remove Element*/
+.hint, .button, .button:hover, .button:active, a {
+    display: none;
+}
+
+textarea, input {
+    border: 0;
+    float: right;
+    outline: none;
+}
+
+div#input {}
+
+div#graphics {
+    min-width: 400px;
+    height: 400px;
+}
